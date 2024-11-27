@@ -18,7 +18,7 @@ public class InverseIndexing {
 		// Search for the input keyword in the Trie
         if (trie.search(input) == null) {
             // If the keyword is not found in the Trie, display "Not found"
-            System.out.println("Not found");
+            Suggestions.Search(input);
             return;
         }
 

@@ -321,7 +321,7 @@ public class WebCrawler {
 		while (true) {
 			// Waiting for the page to load by checking if the series-banner element is
 			// present or not
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.className("series-banner")));
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.className("series-banner__title")));
 
 			// Finding the list of all the products by using find elements which have class
 			// name product-card. It is the class associated
@@ -351,7 +351,7 @@ public class WebCrawler {
 
 						// Navigating back to the menu page and waiting for the page to load.
 						driver.navigate().back();
-						wait.until(ExpectedConditions.presenceOfElementLocated(By.className("series-banner")));
+						wait.until(ExpectedConditions.presenceOfElementLocated(By.className("series-banner__title")));
 					}
 
 				}

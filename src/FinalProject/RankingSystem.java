@@ -15,7 +15,7 @@ import java.util.Set;
 
 public class RankingSystem {
 
-	public static void liveRanking(String input) {
+	public static void liveRanking() {
 		// Sample Map to insert into AVL Tree
 		Map<String, Map<String, Integer>> crawlResult = WebCrawler.crawl();
 
@@ -34,7 +34,6 @@ public class RankingSystem {
 
 		}
 
-		PageRank.pageRank(pageMapping, input);
 
 	}
 

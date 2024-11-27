@@ -27,6 +27,8 @@ public class Main {
 				hammerSmartwatches.crawl();
 				GoNoise.crawl();
 				CombineCSV.combine();
+			} else if (input.toLowerCase().equals("$rr")) {
+				WebCrawler.crawl();
 			} else if (input.toLowerCase().equals("$all")) {
 				searchMode = 1;
 			} else if (input.toLowerCase().equals("$ts")) {
@@ -40,7 +42,6 @@ public class Main {
 			} else if (input.charAt(input.length() - 1) == '^') {
 				AutoComplete.Complete(input.substring(0, input.length() - 1));
 			} else {
-				Suggestions.Search(input);
 				if (searchMode == 0)
 					RankingSystem.loadRanking(input);
 				else
