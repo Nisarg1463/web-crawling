@@ -1,8 +1,6 @@
 package FinalProject;
 
 import java.util.Scanner;
-
-import WebDriver.InverseIndexing;
 import wordCompletion.AutoComplete;
 
 public class Main {
