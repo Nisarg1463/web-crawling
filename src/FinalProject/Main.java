@@ -49,6 +49,7 @@ public class Main {
 				SearchFrequency.add(input);
 			}
 		}
+		sc.close();
 	}
 
 	public static void help() {
